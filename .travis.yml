@@ -1,7 +1,0 @@
-deploy:
-  provider: heroku
-  api_key:
-    secure: aq/UA4mArJSlS7GSwMwpYKfY2U3IYChY12RBQuSr6wFOPPTQ8m9jD8MMhVUKdBSqLY1JGt0JP70OvF8GFMt/Tckf2ew8IFe//Y1O8rWMvs+i4/VUPAvvN5PGeO0FyeOIyUcSBSolH7dhaS/Wud+wTaP8LpTkJfP3iH2J2yXNWUo=
-  app: protected-temple-4275
-  on:
-    repo: silen6/silen6.com
