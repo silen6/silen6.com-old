@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
 
-  {% include head.html %}
+  <meta charset="UTF-8">
+  <title>Silen6</title>
 
-    <body>
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
 
-    {% include header.html %}
+</head>
+<body>
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
-    </div>
+  {{ content }}
 
-    {% include footer.html %}
-
-    </body>
+</body>
 </html>
