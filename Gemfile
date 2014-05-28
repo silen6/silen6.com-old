@@ -5,3 +5,4 @@ gem "jekyll"
 gem "kramdown"
 gem "rack-jekyll"
 gem 'thin'
+gem 'rake'
