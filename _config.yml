@@ -9,6 +9,11 @@ url: "http://yourdomain.com"
 markdown: kramdown
 permalink: pretty
 
+assets:
+  compress:
+    js:  uglifier
+    css: sass
+
 exclude:
  - unicorn.rb
  - README.md

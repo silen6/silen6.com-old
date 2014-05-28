@@ -7,7 +7,7 @@ gem "jekyll"
 gem "kramdown"
 
 gem "jekyll-assets"
-gem "compass"
+gem "bourbon"
 gem "coffee-script"
 gem "uglifier"
 
