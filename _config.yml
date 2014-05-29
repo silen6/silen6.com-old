@@ -15,7 +15,6 @@ assets:
     css: sass
 
 exclude:
- - unicorn.rb
  - README.md
  - Procfile
  - Gemfile
@@ -24,12 +23,21 @@ exclude:
  - vendor
 
 social:
+  - abbr: linkedin
+    name: LinkedIn
+    url:  http://linkedin.com/pub/cami-thurber/20/195/824
+  - abbr: dribbble
+    name: Dribbble
+    url:  http://dribbble.com/silen6
   - abbr: facebook
     name: Facebook
-    url:  https://www.facebook.com/silen6
+    url:  http://facebook.com/silen6
   - abbr: twitter
     name: Twitter
     url:  https://twitter.com/silen6design
-  - abbr: linkedin
-    name: LinkedIn
-    url:  https://www.linkedin.com/in/camithurber
+  - abbr: instagram
+    name: Instagram
+    url:  https://instagram.com/silen6
+  - abbr: envelope
+    name: Email
+    url:  mailto:cami@silen6.com
