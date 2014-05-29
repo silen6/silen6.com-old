@@ -7,6 +7,7 @@
   <title>Branding, Print and Illustration Services | Silen6</title>
 
   <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700,400italic,700italic,300italic'>
+  <link rel='stylesheet' type='text/css' href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
   {% stylesheet app %}
 </head>
 <body>
@@ -20,9 +21,22 @@
     <div>
       <h1>Branding, Print &amp; Illustration</h1>
       <h2>In it for the very sake of design</h2>
-      <p>
+
+      <p class="cta">
         <a href="#contact" class="btn">Contact Me</a>
       </p>
+
+      <ul class="social-list">
+      {% for s in site.social %}
+        <li class="social-list-item">
+          <a href="{{ s.url }}">
+            <i class="fa-{{s.abbr}}"></i>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+
+
     </div>
 
   </section>

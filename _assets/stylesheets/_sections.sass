@@ -17,7 +17,7 @@
   h2
     font-size: 36px
     text-transform: uppercase
-    margin-bottom: $line-height-base * 3
+    margin-bottom: $line-height-base * 2
 
   .btn
     background-color: transparent
@@ -28,3 +28,29 @@
     padding:
       left: $btn-padding * 3
       right: $btn-padding * 3
+
+  .cta
+    margin-bottom: $line-height-base * 3
+
+.social-list
+  +reset-list
+  color: $black
+
+.social-list-item
+  text-align: center
+  display: inline-block
+  margin: 0 3px
+
+  a
+    display: block
+    color: inherit
+    width: 30px
+    height: 30px
+    line-height: 30px
+    border-radius: 20px
+    background-color: $white
+    text-decoration: none
+    background-color: $gray
+
+    &:hover
+      background-color: $gray-light

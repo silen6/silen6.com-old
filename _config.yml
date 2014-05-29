@@ -22,3 +22,14 @@ exclude:
  - Gemfile.lock
  - config.ru
  - vendor
+
+social:
+  - abbr: facebook
+    name: Facebook
+    url:  https://www.facebook.com/silen6
+  - abbr: twitter
+    name: Twitter
+    url:  https://twitter.com/silen6design
+  - abbr: linkedin
+    name: LinkedIn
+    url:  https://www.linkedin.com/in/camithurber
