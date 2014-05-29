@@ -1,0 +1,23 @@
+input, button, select, textarea
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+
+#{$all-text-inputs}, select, textarea
+  width: 100%
+  height: $input-height
+  padding: 0 $input-padding
+  margin-bottom: $line-height-base/2
+  line-height: $line-height-base
+  background-color: $input-bg
+  border: 1px solid $input-border
+  border-radius: $input-border-radius
+  outline: none
+  color: $gray-darker
+
+#{$all-text-inputs}, textarea
+  +appearance(none)
+
+textarea
+  height: auto
+  padding: $input-padding
