@@ -1,4 +1,4 @@
-task default: %w[test]
+task default: "assets:precompile"
 
 task :test do
   puts 'no tests'
