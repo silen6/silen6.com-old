@@ -32,6 +32,9 @@
   .cta
     margin-bottom: $line-height-base * 3
 
+  .learn-more
+    display: none
+
 .social-list
   +reset-list
   color: $black
@@ -54,3 +57,8 @@
 
     &:hover
       background-color: $gray-light
+
+
+@include min-screen($bp-ipad)
+  .learn-more
+    display: inline-block !important
