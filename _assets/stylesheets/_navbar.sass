@@ -1,0 +1,21 @@
+.navbar
+  text-align: center
+
+  .brand
+    $logo-width: 140px
+    $logo-height: 65px
+    margin: 0 auto
+    +ir
+    +retina-image(logo, $logo-width $logo-height, png, 'logo@2x', true)
+    display: block
+    width: $logo-width
+    height: $logo-height
+    background-repeat: no-repeat
+    cursor: pointer
+
+
+@include min-screen($bp-ipad)
+  .navbar
+
+    .brand
+      float: left
