@@ -41,6 +41,23 @@
   .learn-more
     display: none
 
+.projects
+  +clearfix
+  background-color: $gray-lighter
+  background-image: image-url("shattered.png")
+  padding: $content-padding*3 $content-padding
+
+.project-list
+  +reset-list
+
+.project-list-item
+  width: 50%
+  float: left
+
+  img
+    padding: 5px
+    width: 100%
+
 .social-list
   +reset-list
   color: $black
@@ -80,6 +97,9 @@
   .learn-more
     display: inline-block !important
 
+  .project-list-item
+    width: 33%
+
 @include min-screen($bp-desktop)
   .intro
     h1
@@ -88,3 +108,6 @@
     h2
       font-size: 66px
       max-width: 600px
+
+  .project-list-item
+    width: 25%
