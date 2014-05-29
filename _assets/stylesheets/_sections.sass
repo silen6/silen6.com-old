@@ -12,12 +12,18 @@
     font-size: 18px
     text-transform: uppercase
     font-weight: 100
-    margin-bottom: $line-height-base/2
+    margin:
+      left: auto
+      right: auto
+      bottom: $line-height-base/2
 
   h2
     font-size: 36px
     text-transform: uppercase
-    margin-bottom: $line-height-base * 2
+    margin:
+      left: auto
+      right: auto
+      bottom: $line-height-base * 2
 
   .btn
     background-color: transparent
@@ -64,5 +70,21 @@
     padding-left: $content-padding
     padding-right: $content-padding
 
+    h1
+      font-size: 24px
+
+    h2
+      font-size: 48px
+      max-width: 400px
+
   .learn-more
     display: inline-block !important
+
+@include min-screen($bp-desktop)
+  .intro
+    h1
+      font-size: 30px
+
+    h2
+      font-size: 66px
+      max-width: 600px
