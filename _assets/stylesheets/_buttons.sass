@@ -1,0 +1,33 @@
+.btn
+  +appearance(none)
+  +text-truncate
+  position: relative
+  display: inline-block
+  margin: 0
+  padding: 2px $btn-padding 0 $btn-padding
+  min-width: ($btn-padding * 3) + $btn-font-size
+  min-height: $btn-height + 5px
+  vertical-align: top
+  border:
+    width: $btn-border-width
+    style: solid
+    radius: $btn-border-radius
+  text:
+    align: center
+    overflow: ellipsis
+    transform: uppercase
+  font-size: $btn-font-size
+  line-height: $btn-height - $btn-border-width + 1px
+  cursor: pointer
+  outline: none
+
+  color: $text-color
+  background-color: $white
+  border-color: $border-color
+
+  &:hover
+    color: $text-color
+    text-decoration: none
+
+.btn + .btn
+  margin-left: 10px
