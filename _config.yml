@@ -41,3 +41,8 @@ social:
   - abbr: envelope
     name: Email
     url:  mailto:cami@silen6.com
+
+analytics:
+  google:
+    tracking_id: 'UA-46268100-1'
+    domain: 'silen6.com'

@@ -1,2 +1,7 @@
 url: http://localhost:4000
 dev: true
+
+analytics:
+  google:
+    tracking_id: ''
+    domain: ''
