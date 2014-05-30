@@ -88,10 +88,10 @@
 
     i
       font-size: 32px
-      margin-bottom: 12px
       display: block
 
     p
+      display: none
       margin-bottom: 0
       text-transform: uppercase
       font-weight: bold
@@ -145,6 +145,13 @@
 
   .project-list-item
     width: 33%
+
+    .overlay
+      i
+        margin-bottom: 12px
+
+      p
+        display: block
 
 @include min-screen($bp-desktop)
   .intro
