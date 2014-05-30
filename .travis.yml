@@ -7,7 +7,7 @@ deploy:
   strategy: git
   api_key:
     secure: QPZAUiJc7/bBEaJYqMcaPnJrxooZOc6nsmvrGT65lWgbo3Zu8fD3ViSvIUct2IsHxKi867CNsTut9ZQVkx0ZraaaR5J7yX8aOIT92speejbS9IPa/RkliLrf1Xvv8NxrSAuFyo0aKJnRPdBWKqVmKZLveA46v9iCPtuJS2HocX0=
-  app: protected-temple-4275
+  app: silen6
   on:
     branch: master
     repo: silen6/silen6.com
