@@ -50,12 +50,46 @@
 
   <section class="contact">
     <div class="body-width">
-      <form class="contact-form">
-        asdf
-      </form>
+      <div class="contact-form-col">
+        <h3><strong>email</strong> me</h3>
+
+        <form class="contact-form">
+          <div class="double-groups">
+            <div class="group">
+              <input type="text" placeholder="name" required>
+            </div>
+            <div class="group">
+              <input type="email" placeholder="email address" required>
+            </div>
+          </div>
+
+          <div class="double-groups">
+            <div class="group">
+              <input type="text" placeholder="company name">
+            </div>
+            <div class="group">
+              <input type="text" placeholder="phone #">
+            </div>
+          </div>
+
+          <div class="group">
+            <textarea rows="10" placeholder="message" required></textarea>
+          </div>
+
+          <div class="actions">
+            <input type="submit" value="Send" class="btn">
+
+            <p class="hint">
+              <a href="mailto:cami@silen6.com">or just send me a normal email</a>
+            </p>
+          </div>
+
+        </form>
+      </div>
 
       <div class="contact-social-col">
         <h3><strong>follow</strong> me</h3>
+
         <ul class="contact-social">
         {% for s in site.social %}
           <li class="list-item">
