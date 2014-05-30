@@ -40,29 +40,31 @@
   </section>
 
   <section class="projects">
-    <ul class="project-list body-width">
-      <li class="project-list-item">
-        <img src="https://d13yacurqjgara.cloudfront.net/users/457055/screenshots/1572530/lpbird-drib.png" alt="">
-      </li>
-      <li class="project-list-item">
-        <img src="https://d13yacurqjgara.cloudfront.net/users/457055/screenshots/1572530/lpbird-drib.png" alt="">
-      </li>
-      <li class="project-list-item">
-        <img src="https://d13yacurqjgara.cloudfront.net/users/457055/screenshots/1572530/lpbird-drib.png" alt="">
-      </li>
-      <li class="project-list-item">
-        <img src="https://d13yacurqjgara.cloudfront.net/users/457055/screenshots/1572530/lpbird-drib.png" alt="">
-      </li>
-      <li class="project-list-item">
-        <img src="https://d13yacurqjgara.cloudfront.net/users/457055/screenshots/1572530/lpbird-drib.png" alt="">
-      </li>
-      <li class="project-list-item">
-        <img src="https://d13yacurqjgara.cloudfront.net/users/457055/screenshots/1572530/lpbird-drib.png" alt="">
-      </li>
-    </ul>
   </section>
 
   {{ content }}
 
+  <script type="text/template" id="shots-template">
+    <ul class="project-list body-width">
+      <% _.each(shots, function(shot) { %>
+      <li class="project-list-item">
+        <a href="<%= shot.url%>" target="_blank">
+          <img src="<%= shot.image_url%>" />
+
+          <div class="overlay">
+            <div>
+              <i class="fa-external-link-square"></i>
+              <p>View on Dribbble</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <% }); %>
+    </ul>
+  </script>
+
+  {% javascript components/jquery/dist/jquery %}
+  {% javascript components/underscore/underscore %}
+  {% javascript index %}
 </body>
 </html>

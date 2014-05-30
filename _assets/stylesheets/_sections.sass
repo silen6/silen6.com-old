@@ -45,7 +45,7 @@
   +clearfix
   background-color: $gray-lighter
   background-image: image-url("shattered.png")
-  padding: $content-padding*3 $content-padding
+  padding: $content-padding
 
 .project-list
   +reset-list
@@ -55,8 +55,50 @@
   float: left
 
   img
-    padding: 5px
     width: 100%
+
+  a
+    display: block
+    margin: 5px
+    position: relative
+    overflow: hidden
+
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: $brand-yellow
+    opacity: 0
+    text-align: center
+    color: $white
+    @include transition(opacity .25s ease-in-out)
+
+    &:before
+      content: ''
+      display: inline-block
+      height: 100%
+      vertical-align: middle
+      margin-right: -0.25em
+
+    > div
+      display: inline-block
+      vertical-align: middle
+
+    i
+      font-size: 32px
+      margin-bottom: 12px
+      display: block
+
+    p
+      margin-bottom: 0
+      text-transform: uppercase
+      font-weight: bold
+
+  &:hover
+    .overlay
+      opacity: .95
 
 .social-list
   +reset-list
@@ -97,6 +139,10 @@
   .learn-more
     display: inline-block !important
 
+  .projects
+    padding-top: $content-padding*3
+    padding-bottom: $content-padding*3
+
   .project-list-item
     width: 33%
 
@@ -108,6 +154,10 @@
     h2
       font-size: 66px
       max-width: 600px
+
+  .projects
+    padding-top: $content-padding*5
+    padding-bottom: $content-padding*5
 
   .project-list-item
     width: 25%
