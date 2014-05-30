@@ -44,11 +44,32 @@
 
   <section class="contact-cta">
     <div class="body-width">
-      <p>now accepting clients <a href="tel:18019317212">(801) 931.7212<a></p>
+      <p>now accepting clients <a href="tel:18019317212">(801) 931.7212</a></p>
     </div>
   </section>
 
-  {{ content }}
+  <section class="contact">
+    <div class="body-width">
+      <form class="contact-form">
+        asdf
+      </form>
+
+      <div class="contact-social-col">
+        <h3><strong>follow</strong> me</h3>
+        <ul class="contact-social">
+        {% for s in site.social %}
+          <li class="list-item">
+            <a href="{{ s.url }}">
+              <i class="fa-{{s.abbr}}"></i>
+              <span>{{ s.name }}</span>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
 
   <script type="text/template" id="shots-template">
     <ul class="project-list body-width">

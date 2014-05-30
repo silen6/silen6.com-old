@@ -140,6 +140,42 @@
     line-height: 1.2em
     color: inherit
 
+.contact
+  +clearfix
+  padding: $content-padding
+
+  h3
+    font-weight: normal
+    font-size: 24px
+    margin-bottom: $line-height-base/2
+
+.contact-social
+  +reset-list
+
+  .list-item
+    padding: $content-padding/4 0
+
+  a
+    color: inherit
+
+    &:hover
+      text-decoration: none
+
+      span
+        text-decoration: underline
+
+  i
+    margin-right: 10px
+    display: inline-block
+    color: inherit
+    width: 30px
+    height: 30px
+    line-height: 30px
+    border-radius: 20px
+    color: $white
+    text-decoration: none
+    background-color: $gray
+    text-align: center
 
 @include min-screen($bp-ipad)
   .intro
@@ -182,6 +218,19 @@
 
       &:hover
         text-decoration: none
+
+  .contact
+    +clearfix
+    padding-top: $content-padding*2
+    padding-bottom: $content-padding*2
+
+    .contact-form
+      float: left
+      width: 65%
+
+    .contact-social-col
+      float: right
+      width: 35%
 
 @include min-screen($bp-desktop)
   .intro
